@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	data "github.com/MishraShardendu22/Data"
+	"github.com/MishraShardendu22/Data"
 	"github.com/MishraShardendu22/Types"
 )
 
@@ -15,7 +15,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Print status code properly
 	fmt.Println("Response Status Code:", DataResponse.Status())
 
 	var rss types.RSS
