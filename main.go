@@ -15,7 +15,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println("Response Status Code:", DataResponse.Status())
+	// fmt.Println("Response: ", DataResponse.Body())
+	// fmt.Println("Response Status Code:", DataResponse.Status())
 
 	var rss types.RSS
 	err = xml.Unmarshal(DataResponse.Body(), &rss)
